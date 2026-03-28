@@ -123,11 +123,40 @@
     grid-template-columns: 1fr; 
 }
 
-
 .eventosGrid {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr; 
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards lado a lado */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.eventCard {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
+.eventCard img {
+  width: 100%;
+  height: 180px; /* menor que o card de notícia */
+  object-fit: cover;
+}
+
+.eventCard h4 {
+  margin: 8px;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.eventCard p {
+  font-size: 0.85rem;
+  margin: 0 8px 12px;
 }
 
 @media screen and (max-width: 480px) {
@@ -135,15 +164,21 @@
         aspect-ratio: 1 / 1; 
         max-height: 250px;
     }
+    .noticiasGrid {
+        grid-template-columns: 1fr;
+    }
+    .eventosGrid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .carouselWrapper {
-        aspect-ratio: 1 / 1; 
-        max-height: 250px;
+        aspect-ratio: 4 / 3; 
+        max-height: 300px;
     }
     .noticiasGrid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
     .eventosGrid {
         grid-template-columns: repeat(2, 1fr);
@@ -154,10 +189,6 @@
     .carouselWrapper {
         aspect-ratio: 16 / 9;
         max-height: 400px; 
-    }
-    .carouselWrapper {
-        aspect-ratio: 4 / 3; 
-        max-height: 300px;
     }
     .noticiasGrid {
         grid-template-columns: repeat(2, 1fr);
@@ -192,3 +223,4 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
