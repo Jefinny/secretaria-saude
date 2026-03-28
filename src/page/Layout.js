@@ -1,5 +1,9 @@
 import React from "react";
-
+import Header from "./Header";
+import Banner from "./Banner";
+import Breadcrumbs from "./Breadcrumbs";
+import Sidebar from "./Sidebar";
+import Footer from "./Footer";
 import "../styles/layout.css"
 
 export default function layout({children}){
