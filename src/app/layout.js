@@ -1,6 +1,10 @@
+"use client";
+
 import React from "react";
 import Header from "../components/Header";
 import Banner from "../components/Banner"
+import Sidebar from "../components/Sidebar";
+
 import "../styles/layout.css";
 import "./globals.css";
 
@@ -8,13 +12,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <body>
-        <div className="layout">
-          <Header />
-          <Banner />
-          <div className="layout-body">
-            <main className="layout-content">{children}</main>
+          <div className="layout">
+              <Header />
+              <Banner />
+
+              <div className="layout-body">
+                  <Sidebar />   
+                  <main className="layout-content">{children}</main>
+            </div>
           </div>
-        </div>
       </body>
     </html>
   );

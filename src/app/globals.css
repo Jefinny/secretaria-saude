@@ -9,7 +9,8 @@
     --secondary-color:#fee100;
     --tertiary-color:#6fa324;
     --quaternary-color:#d0133b;
-    --text-color:#4B5563;
+    --text-color-primary:#4B5563;
+    --text-color-secondary:#1c76b2;
     --background-color:#f8f8f8;
     --font-base:'Rawline', Helvetica, Arial, sans-serif;
 }
@@ -45,10 +46,11 @@ body{
 
 a{
     color: #3498db;
+    text-decoration: none;
 }
 
 a:hover{
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 ul{

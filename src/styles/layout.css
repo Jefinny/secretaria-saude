@@ -4,16 +4,26 @@
     min-height: 100vh;
 }
 
-.layout-main{
+.layout-body{
     flex: 1;
     display: flex;
-    flex-direction: column;
-    padding: 1rem;
 }
 
-.layout-content{
+.layout-sidebar{
+    width: 220px;
+    background-color: #1E1E2F;
+    color: #fff;
+    padding: 20px;
+}
+
+.layout-content {
+    background:var(--background-color); /* ou outra cor clara */
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .layout-body {
+    display: block; /* não força flex quando Sidebar é overlay */
+  }
 }
