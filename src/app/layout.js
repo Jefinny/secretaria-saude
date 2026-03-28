@@ -1,27 +1,20 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import React from "react";
+import Header from "../components/Header";
+import "../styles/layout.css";
 import "./globals.css";
 
-import React from "react";
-import Header from "./Header";
-import Banner from "./Banner";
-import Breadcrumbs from "./Breadcrumbs";
-import Sidebar from "./Sidebar";
-import Footer from "./Footer";
-import "../styles/layout.css"
-
-export default function layout({children}){
-    return(
+export default function RootLayout({ children }) {
+  return (
+    <html lang="pt-BR">
+      <body>
         <div className="layout">
-            <Header />
-            <Banner />
-            <Breadcrumbs />
+          <Header />
 
-            <div className="Layout-body">
-                <Sidebar />
-                <main className="layout-content1">{children}</main>
-            </div>
-
-            <Footer />
+          <div className="layout-body">
+            <main className="layout-content">{children}</main>
+          </div>
         </div>
-    );
+      </body>
+    </html>
+  );
 }
