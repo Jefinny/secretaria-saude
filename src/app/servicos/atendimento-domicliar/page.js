@@ -1,6 +1,5 @@
 "use client"; // necessário se você usar hooks ou interatividade
 
-import React from "react"; // importa React
 import React, { useEffect } from "react";
 import "../../../styles/atendimentoDomiciliar.css"; // importa o CSS (ajuste o caminho conforme sua estrutura)
 
