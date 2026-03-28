@@ -38,7 +38,7 @@ export default function Sidebar() {
                                     <li><a href="/servicos/atendimento-domiciliar">Atendimento Domiciliar</a></li>
                                     <li><a href="/servicos/farmacia-municipal">Farmácia Municipal</a></li>
                                     <li><a href="/servicos/laboratorio-municipal">Laboratório Municipal</a></li>
-                                    <li><a href="/servicos/pace">PACE</a></li>
+                                    <li><a href="/servicos/pace">Doação de sangue</a></li>
                                     <li><a href="/servicos/vacina">Vacina</a></li>
                                 </ul>
                             )}
