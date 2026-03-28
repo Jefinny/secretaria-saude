@@ -34,12 +34,18 @@
 }
 
 .buttons button.active {
-  background: var(--tertiary-color); /* cor terciária */
+  background: linear-gradient(135deg, #0077cc, #00aaff);
   color: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
+.dashboard-container {
+  width: 100%;
+  height: 90vh; /* ocupa quase toda a tela */
+}
 
-
-
-
+.dashboard-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none; /* remove borda */
+  background: transparent; /* sem fundo */
+}
