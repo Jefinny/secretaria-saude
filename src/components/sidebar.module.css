@@ -80,7 +80,26 @@
   font-size: 0.8rem;
    font-size: 14px;
 }
+.arrow {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--text-color-secondary);
+  border-bottom: 2px solid var(--text-color-secondary);
+  transform: rotate(-45deg); /* seta para direita */
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+}
 
+.active .arrow {
+  transform: rotate(45deg); /* seta para baixo */
+}
+
+/* Quando passar o mouse no botão do menu */
+.menuBtn:hover .arrow {
+  border-right-color: #fff; /* branco */
+  border-bottom-color: #fff; /* branco */
+}
 @media (max-width: 768px) {
     .hamburger {
         display: block; 

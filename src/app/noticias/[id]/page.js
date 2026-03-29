@@ -1,33 +1,55 @@
 "use client";
-
-import React, { useEffect } from "react";
+import ReactMarkdown from "react-markdown";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import noticiasData from "../../../data/noticias.json";
 import "../../../styles/noticiasDetalhes.css";
 
 export default function NoticiasDetalhes() {
-    const params = useParams();
-    const noticia = noticiasData.find((n) => n.id.toString() === params.id);
+  const params = useParams();
+  const noticia = noticiasData.find((n) => n.id.toString() === params.id);
 
-    // 🔝 Sempre voltar ao topo ao carregar a página
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+  const [conteudo, setConteudo] = useState("");
 
-    if (!noticia) return <p>Notícia não encontrada</p>;
+  // 🔝 Sempre voltar ao topo ao carregar a página
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-    return (
-        <article className="noticia-detalhe">
-            <img src={noticia.imagem} alt={noticia.titulo} className="noticia-banner" />
-            <h2>{noticia.titulo}</h2>
-            <span className="noticia-data">
-                {new Date(noticia.data_publicacao).toLocaleDateString("pt-BR")}
-            </span>
-            <p>{noticia.conteudo}</p>
-            <Link href="/noticias" className="voltar">
-                ← Voltar para Notícias
-            </Link>
-        </article>
-    );
+  // 🔎 Buscar o arquivo .md indicado no JSON
+  useEffect(() => {
+    if (noticia?.descricao_file) {
+      fetch(noticia.descricao_file)
+        .then((res) => res.text())
+        .then((text) => setConteudo(text));
+    }
+  }, [noticia]);
+
+  if (!noticia) return <p>Notícia não encontrada</p>;
+
+  return (
+    <article className="noticia-detalhe">
+      <img
+        src={noticia.imagem}
+        alt={noticia.titulo}
+        className="noticia-banner"
+      />
+      <h2>{noticia.titulo}</h2>
+      <span className="noticia-data">
+        {new Date(noticia.data_publicacao).toLocaleDateString("pt-BR")}
+      </span>
+
+      {/* Renderiza o conteúdo do arquivo Markdown */}
+      {conteudo ? (
+        <ReactMarkdown>{conteudo}</ReactMarkdown>
+      ) : (
+        <p>{noticia.conteudo}</p>
+      )}
+
+      <Link href="/noticias" className="voltar">
+        ← Voltar para Notícias
+      </Link>
+    </article>
+  );
 }

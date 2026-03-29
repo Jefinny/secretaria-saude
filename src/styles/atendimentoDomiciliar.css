@@ -1,25 +1,43 @@
 .atendimento {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
+   max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
-
 .banner img {
   width: 100%;
-  height: auto;   /* deixa a altura proporcional */
+  height: auto;
   border-radius: 8px;
-  margin-bottom: 30px;
 }
 
-.conteudo ol {
-  margin-left: 20px;
-  padding-left: 15px;
-  list-style-position: outside; /* garante que os números fiquem fora do bloco */
+.conteudo {
+  margin-top: 2rem;
 }
-/* Aplica estilo apenas ao <ul> dentro da página de Atendimento */
+
+.conteudo h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.conteudo h3 {
+  margin-top: 2rem;
+  color: var(--tertiary-color);
+}
+
+.conteudo h4 {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.conteudo p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
 .conteudo ul {
-  margin-left: 1.5rem;   /* recuo à esquerda */
-  padding-left: 1rem;    /* espaço interno */
-  list-style-type: disc; /* bolinhas padrão */
-  color: var(--text-color-primary);
+  margin: 0.5rem 0 1rem 1.5rem;
+  list-style: disc;
+}
+
+.conteudo li {
+  margin-bottom: 0.5rem;
 }

@@ -111,28 +111,37 @@ export default function Home() {
       </div>
 
       {/* Eventos */}
-      <div className={styles.section}>
-        <h3 className={styles.sectionTitle}>Eventos</h3>
-        <div className={styles.eventosGrid}>
-          {eventosRecentes.map((evento) => (
-            <Link
-              key={evento.id}
-              href={`/eventos/${evento.id}`}
-              className={styles.eventCard}
-            >
-              <img src={evento.imgSrc} alt={evento.titulo} />
-              <h4>{evento.titulo}</h4>
-              <p>{evento.resumo}</p>
-              <p><strong>{evento.data}</strong></p>
+        <div className={styles.section}>
+          <h3 className={styles.sectionTitle}>Eventos</h3>
+          <div className={styles.eventosGrid}>
+            {eventosRecentes.map((evento) => (
+              <Link
+                key={evento.id}
+                href={`/eventos/${evento.id}`}
+                className={styles.eventCard}
+              >
+                <img src={evento.imgSrc} alt={evento.titulo} />
+                <h4>{evento.titulo}</h4>
+                <p>{evento.resumo}</p>
+                <p>
+                  <strong>
+                    {new Date(evento.data).toLocaleDateString("pt-BR", {
+                      day: "2-digit",
+                      month: "2-digit",
+                      year: "numeric"
+                    })}
+                  </strong>
+                </p>
+              </Link>
+            ))}
+          </div>
+          <div className={styles.center}>
+            <Link href="/eventos" className={styles.buttonBlue}>
+              Ver todos eventos
             </Link>
-          ))}
+          </div>
         </div>
-        <div className={styles.center}>
-          <Link href="/eventos" className={styles.buttonBlue}>
-            Ver todos eventos
-          </Link>
-        </div>
-      </div>
+
     </section>
   );
 }

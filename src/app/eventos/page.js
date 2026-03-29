@@ -34,15 +34,25 @@ export default function Page() {
             <h2>Eventos</h2>
             <div className="eventosGrid">
                 {eventosPagina.map((evento) => (
-                <EventosCard key={evento.id} evento={evento} />
+                    <EventosCard key={evento.id} evento={evento} />
                 ))}
             </div>
 
             {/* Navegação de páginas */}
             <div className="paginacao">
-                <button onClick={() => setPaginaAtual((prev) => Math.max(prev - 1, 1))} disabled={paginaAtual === 1}> ← Anterior</button>
+                <button
+                    onClick={() => setPaginaAtual((prev) => Math.max(prev - 1, 1))}
+                    disabled={paginaAtual === 1}
+                >
+                    ← Anterior
+                </button>
                 <span>Página {paginaAtual} de {totalPaginas}</span>
-                <button onClick={() => setPaginaAtual((prev) => Math.min(prev + 1, totalPaginas))} disabled={paginaAtual === totalPaginas} >Próxima →</button>
+                <button
+                    onClick={() => setPaginaAtual((prev) => Math.min(prev + 1, totalPaginas))}
+                    disabled={paginaAtual === totalPaginas}
+                >
+                    Próxima →
+                </button>
             </div>
         </section>
     );
