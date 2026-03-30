@@ -49,7 +49,7 @@ export default function Page() {
     <section className="OpcoesVacina">
       {/* Banner */}
       <div className="banner">
-        <img src="/img/bannerPaginas/vacina.jpg" alt="Vacinação em Muriaé" />
+        <img src="/img/banner-paginas/vacina.jpg" alt="Vacinação em Muriaé" />
       </div>
 
       {/* Texto introdutóriod */}

@@ -17,7 +17,7 @@
 }
 
 .sidebar {
-   width: 250px;
+   width: 270px;
     background: var(--background-color);
     color: var(--text-color-secondary);
     padding: 20px;
@@ -60,11 +60,51 @@
     gap: 8px; /* espaço entre ícone e texto */
 }
 
-/* Ícones */
-.icon {
-    width: 20px;
-    height: 20px;
+.iconWrapper {
+  position: relative;
+  width: 24px;   /* ajuste conforme tamanho do ícone */
+  height: 24px;
+  display: inline-block;
 }
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Ícone padrão visível por padrão */
+.iconDefault {
+  opacity: 1;
+}
+
+/* Ícone hover escondido por padrão */
+.iconHover {
+  opacity: 0;
+}
+
+/* Quando passa o mouse no link, troca */
+.menuLink:hover .iconDefault,
+.menuBtn:hover .iconDefault {
+  opacity: 0;
+}
+
+.menuLink:hover .iconHover,
+.menuBtn:hover .iconHover {
+  opacity: 1;
+}
+
+
+/* Quando passa o mouse no link, troca */
+.menuLink:hover .iconDefault {
+  opacity: 0;
+}
+
+.menuLink:hover .iconHover {
+  opacity: 1;
+}
+
 
 /* Bloco da seta à direita */
 .right {
