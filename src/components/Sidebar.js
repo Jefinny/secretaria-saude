@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Link from "next/link"; // ✅ usar Link do Next.js
+import Link from "next/link"; 
 import styles from "./sidebar.module.css";
 
 export default function Sidebar() {
@@ -26,15 +26,28 @@ export default function Sidebar() {
                 <button className={styles.closeBtn} onClick={() => setOpen(false)}>×</button>
                 <nav>
                     <ul>
+                        {/* Página Inicial */}
                         <li>
-                            <Link href="/" className={styles.menuLink}>Página Inicial</Link>
+                            <Link href="/" className={styles.menuLink}>
+                                <span className={styles.left}>
+                                    <img src="/img/icon/home.png" alt="Home" className={styles.icon} />
+                                    Página Inicial
+                                </span>
+                            </Link>
                         </li>
 
+                        {/* Serviços de Saúde */}
                         <li>
                             <button 
                                 onClick={() => toggleMenu("servicos")} 
                                 className={`${styles.menuBtn} ${activeMenu === "servicos" ? styles.active : ""}`}>
-                                Serviços de Saúde <span className={styles.arrow}></span>
+                                <span className={styles.left}>
+                                    <img src="/img/icon/servico-saude.png" alt="Serviços" className={styles.icon} />
+                                    Serviços de Saúde
+                                </span>
+                                <span className={styles.right}>
+                                    <span className={styles.arrow}></span>
+                                </span>
                             </button>
                             {activeMenu === "servicos" && (
                                 <ul className={styles.submenu}>
@@ -47,11 +60,18 @@ export default function Sidebar() {
                             )}
                         </li>
 
+                        {/* Vigilância em Saúde */}
                         <li>
                             <button 
                                 onClick={() => toggleMenu("vigilancia")} 
                                 className={`${styles.menuBtn} ${activeMenu === "vigilancia" ? styles.active : ""}`}>
-                                Vigilância em Saúde <span className={styles.arrow}></span>
+                                <span className={styles.left}>
+                                    <img src="/img/icon/vigilancia-saude.png" alt="Vigilância" className={styles.icon} />
+                                    Vigilância em Saúde
+                                </span>
+                                <span className={styles.right}>
+                                    <span className={styles.arrow}></span>
+                                </span>
                             </button>
                             {activeMenu === "vigilancia" && (
                                 <ul className={styles.submenu}>
@@ -61,11 +81,18 @@ export default function Sidebar() {
                             )}
                         </li>
 
+                        {/* Saúde Digital */}
                         <li>
                             <button 
                                 onClick={() => toggleMenu("digital")} 
                                 className={`${styles.menuBtn} ${activeMenu === "digital" ? styles.active : ""}`}>
-                                Saúde Digital <span className={styles.arrow}></span>
+                                <span className={styles.left}>
+                                    <img src="/img/icon/saude-digital.png" alt="Saúde Digital" className={styles.icon} />
+                                    Saúde Digital
+                                </span>
+                                <span className={styles.right}>
+                                    <span className={styles.arrow}></span>
+                                </span>
                             </button>
                             {activeMenu === "digital" && (
                                 <ul className={styles.submenu}>
@@ -75,11 +102,18 @@ export default function Sidebar() {
                             )}
                         </li>
 
+                        {/* Contatos */}
                         <li>
                             <button 
                                 onClick={() => toggleMenu("contatos")} 
                                 className={`${styles.menuBtn} ${activeMenu === "contatos" ? styles.active : ""}`}>
-                                Contatos <span className={styles.arrow}></span>
+                                <span className={styles.left}>
+                                    <img src="/img/icon/contato.png" alt="Contatos" className={styles.icon} />
+                                    Contatos
+                                </span>
+                                <span className={styles.right}>
+                                    <span className={styles.arrow}></span>
+                                </span>
                             </button>
                             {activeMenu === "contatos" && (
                                 <ul className={styles.submenu}>
@@ -89,12 +123,24 @@ export default function Sidebar() {
                             )}
                         </li>
 
+                        {/* Transparência */}
                         <li>
-                            <Link href="/transparencia" className={styles.menuLink}>Transparência</Link>
+                            <Link href="/transparencia" className={styles.menuLink}>
+                                <span className={styles.left}>
+                                    <img src="/img/icon/transparencia.png" alt="Transparência" className={styles.icon} />
+                                    Transparência
+                                </span>
+                            </Link>
                         </li>
 
+                        {/* Fluxos Assistenciais */}
                         <li>
-                            <Link href="/fluxos-assistenciais" className={styles.menuLink}>Fluxos Assistenciais</Link>
+                            <Link href="/fluxos-assistenciais" className={styles.menuLink}>
+                                <span className={styles.left}>
+                                    <img src="/img/icon/servico-saude.png" alt="Fluxos Assistenciais" className={styles.icon} />
+                                    Fluxos Assistenciais
+                                </span>
+                            </Link>
                         </li>
                     </ul>
                 </nav>

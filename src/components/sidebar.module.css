@@ -35,10 +35,11 @@
     margin-bottom: 10px;
 }
 
+/* Links e botões principais */
 .sidebar a,
 .sidebar button {
     display: flex;              
-    justify-content: space-between; 
+    justify-content: space-between; /* esquerda e direita */
     align-items: center;        
     width: 100%;
     padding: 8px;
@@ -51,6 +52,26 @@
     cursor: pointer;
     transition: background 0.2s, color 0.2s;
     text-decoration: none;
+}
+
+/* Ícone + texto agrupados à esquerda */
+.left {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* espaço entre ícone e texto */
+}
+
+/* Ícones */
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Bloco da seta à direita */
+.right {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* força ficar encostado à direita */
 }
 
 .sidebar a:hover,
@@ -73,33 +94,34 @@
     border-left: 2px solid #ccc;
     padding-left: 10px;
     border-radius: 5px;
-   
 }
 
 .submenu a {
-  font-size: 0.8rem;
-   font-size: 14px;
+    font-size: 14px;
 }
+
+/* Setas */
 .arrow {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border-right: 2px solid var(--text-color-secondary);
-  border-bottom: 2px solid var(--text-color-secondary);
-  transform: rotate(-45deg); /* seta para direita */
-  margin-left: 8px;
-  transition: transform 0.2s ease;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid var(--text-color-secondary);
+    border-bottom: 2px solid var(--text-color-secondary);
+    transform: rotate(-45deg); /* seta para direita */
+    transition: transform 0.2s ease;
 }
 
 .active .arrow {
-  transform: rotate(45deg); /* seta para baixo */
+    transform: rotate(45deg); /* seta para baixo */
 }
 
-/* Quando passar o mouse no botão do menu */
+/* Hover seta */
 .menuBtn:hover .arrow {
-  border-right-color: #fff; /* branco */
-  border-bottom-color: #fff; /* branco */
+    border-right-color: #fff;
+    border-bottom-color: #fff;
 }
+
+/* Responsivo */
 @media (max-width: 768px) {
     .hamburger {
         display: block; 

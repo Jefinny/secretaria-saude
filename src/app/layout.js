@@ -4,6 +4,7 @@ import React from "react";
 import Header from "../components/Header";
 import Banner from "../components/Banner"
 import Sidebar from "../components/Sidebar";
+import Footer from "../components/Footer";
 
 
 import styles from './layout.module.css';
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
                     {children}
                   </main>
             </div>
+            <Footer />
           </div>
       </body>
     </html>
