@@ -9,12 +9,14 @@
     display: flex;
 }
 
-.layoutSidebar{
+.sidebar {
     width: 220px;
+    height: 100vh; /* ocupa toda a altura da viewport */
     background-color: #1E1E2F;
     color: #fff;
     padding: 20px;
 }
+
 
 .layoutContent {
     background:var(--background-color); /* ou outra cor clara */
