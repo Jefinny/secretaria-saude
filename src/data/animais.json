@@ -1,0 +1,397 @@
+[
+  {
+    "id": 1,
+    "nome": "Amigão",
+    "especie": "Cachorro",
+    "sexo": "macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Amigao.jpeg"
+  },
+  {
+    "id": 2,
+    "nome": "Amora",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Amora.jpeg"
+  },
+  {
+    "id": 3,
+    "nome": "Bela",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Bela.jpeg"
+  },
+  {
+    "id": 4,
+    "nome": "Belisario",
+    "especie": "Cachorro",
+    "sexo": "Macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Belisario.jpeg"
+  },
+  {
+    "id": 5,
+    "nome": "Bento",
+    "especie": "Cachorro",
+    "sexo": "Macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Bento.jpeg"
+  },
+  {
+    "id": 6,
+    "nome": "Beyounce",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Beyonce.jpeg"
+  },
+  {
+    "id": 7,
+    "nome": "Bibi",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Bibi.jpeg"
+  },
+  {
+    "id": 8,
+    "nome": "Bode",
+    "especie": "Cachorro",
+    "sexo": "Macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Bode.jpeg"
+  },{
+    "id": 9,
+    "nome": "Branca",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Branca.jpeg"
+  },
+  {
+    "id": 10,
+    "nome": "Cardosinha",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Cardosinha.jpeg"
+  },
+  {
+    "id": 11,
+    "nome": "Carlinha",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Carlinha.jpeg"
+  },
+  {
+    "id": 12,
+    "nome": "Chicó",
+    "especie": "Cachorro",
+    "sexo": "Macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Chicó.jpeg"
+  },
+  {
+    "id": 13,
+    "nome": "Cleo",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Cleo.jpeg"
+  },
+  {
+    "id": 14,
+    "nome": "Cyclone",
+    "especie": "Cachorro",
+    "sexo": "Macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Cyclone.jpeg"
+  },
+  {
+    "id": 15,
+    "nome": "Dupeladinho",
+    "especie": "Cachorro",
+    "sexo": "Macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Dupeladinho.jpeg"
+  },
+  {
+    "id": 16,
+    "nome": "Edinha",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Edinha.jpeg"
+  },
+  {
+    "id": 17,
+    "nome": "Evin",
+    "especie": "Cachorro",
+    "sexo": "Macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Evin.jpeg"
+  },
+  {
+    "id": 18,
+    "nome": "Fred",
+    "especie": "Cachorro",
+    "sexo": "Macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Fred.jpeg"
+  },
+  {
+    "id": 19,
+    "nome": "Frederico",
+    "especie": "Cachorro",
+    "sexo": "Macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Frederico.jpeg"
+  },
+  {
+    "id": 20,
+    "nome": "Jaqueline",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Jaqueline.jpeg"
+  },
+  {
+    "id": 21,
+    "nome": "Kelinha",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Kelinha.jpeg"
+  },
+  {
+    "id": 22,
+    "nome": "Lampiao",
+    "especie": "Cachorro",
+    "sexo": "Macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Lampiao.jpeg"
+  },
+  {
+    "id": 23,
+    "nome": "Lola",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Lola.jpeg"
+  },
+  {
+    "id": 24,
+    "nome": "Lorena",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Lorena.jpeg"
+  },
+  {
+    "id": 25,
+    "nome": "Luna",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Luna.jpeg"
+  },
+  {
+    "id": 26,
+    "nome": "Luna2",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Luna2.jpeg"
+  },
+  {
+    "id": 27,
+    "nome": "Manqueta",
+    "especie": "Cachorro",
+    "sexo": "Macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Manqueta.jpeg"
+  },
+  {
+    "id": 28,
+    "nome": "Maria",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Maria.jpeg"
+  },
+  {
+    "id": 29,
+    "nome": "Meg",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Meg.jpeg"
+  },
+  {
+    "id": 30,
+    "nome": "Mel",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Mel.jpeg"
+  },
+  {
+    "id": 31,
+    "nome": "Mel2",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Mel2.jpeg"
+  },
+  {
+    "id": 32,
+    "nome": "Moana",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Moana.jpeg"
+  },
+  {
+    "id": 33,
+    "nome": "Morceguinha",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Morceguinha.jpeg"
+  },
+  {
+    "id": 34,
+    "nome": "Nala",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Nala.jpeg"
+  },
+  {
+    "id": 35,
+    "nome": "Paçoca",
+    "especie": "Cachorro",
+    "sexo": "Macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Paçoca.jpeg"
+  },
+  {
+    "id": 36,
+    "nome": "Pantera",
+    "especie": "Cachorro",
+    "sexo": "Macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Pantera.jpeg"
+  },
+  {
+    "id": 37,
+    "nome": "Pretinha",
+    "especie": "Cachorro",
+    "sexo": "femea",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Pretinha.jpeg"
+  },
+  {
+    "id": 38,
+    "nome": "Sr vicente",
+    "especie": "Cachorro",
+    "sexo": "Macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Sr_vicente.jpeg"
+  },
+  {
+    "id": 39,
+    "nome": "Thiaguim",
+    "especie": "Cachorro",
+    "sexo": "Macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Thiaguim.jpeg"
+  },
+  {
+    "id": 40,
+    "nome": "Thor",
+    "especie": "Cachorro",
+    "sexo": "Macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Thor.jpeg"
+  },
+  {
+    "id": 41,
+    "nome": "Tupam",
+    "especie": "Cachorro",
+    "sexo": "Macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Tupam.jpeg"
+  },
+  {
+    "id": 42,
+    "nome": "Valente",
+    "especie": "Cachorro",
+    "sexo": "Macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Valente.jpeg"
+  },
+  {
+    "id": 43,
+    "nome": "Ze",
+    "especie": "Cachorro",
+    "sexo": "Macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Ze.jpeg"
+  },
+  {
+    "id": 44,
+    "nome": "Ze Grilo",
+    "especie": "Cachorro",
+    "sexo": "Macho",
+    "filhote": "false",
+    "descricao": "Rex é um cachorro dócil e brincalhão, adora correr em espaços abertos e se dá muito bem com crianças. Já está vacinado e procura uma família ativa que goste de passeios.",
+    "foto": "/img/animais/Ze_Grilo.jpeg"
+  }
+]

@@ -1,0 +1,38 @@
+.ouvidoria {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: var(--font-base, Arial, sans-serif);
+  color: var(--text-color-primary, #2c3e50);
+  line-height: 1.6;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.conteudo h2 {
+  margin-bottom: 20px;
+  color: #004080;
+}
+
+.conteudo h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #16a085;
+}
+
+.conteudo p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.conteudo ul {
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+  margin-bottom: 20px;
+}

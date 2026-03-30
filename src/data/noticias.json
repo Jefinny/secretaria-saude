@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "titulo": "Muriaé realiza Dia B da Saúde Bucal com ações educativas nas UBS e escolas do município",
+    "descricao_file": "/conteudos/noticia1.md",
+    "imagem": "/img/noticias/noticia1.jpeg",
+    "data_publicacao": "2026-02-14T18:02:42"
+  },
+  {
+    "id": 2,
+    "titulo": "Mais proteção para quem cuida: Muriaé entrega EPIs a agentes de endemias",
+    "descricao_file": "/conteudos/noticia3.md",
+    "imagem": "/img/noticias/noticia2.jpeg",
+    "data_publicacao": "2026-02-14T18:02:42"
+  },
+  {
+    "id": 3,
+    "titulo": "Saúde Digital Muriaé moderniza atendimento e fortalece transparência no SUS municipal",
+    "descricao": "O trecho, até então de terra, apresentava dificuldades de tráfego...",
+    "descricao_file": "/conteudos/noticia3.md",
+    "imagem": "/img/noticias/noticia3.jpeg",
+    "data_publicacao": "2026-03-28T18:02:42"
+  }
+
+]

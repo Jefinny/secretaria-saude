@@ -1,0 +1,136 @@
+.noticias {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.noticias h2 {
+  font-size: 1.8rem; /* título um pouco menor */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.noticiasGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px; /* espaço reduzido entre os cards */
+}
+
+.noticia-card {
+  display: block;
+  padding: 12px; /* padding menor */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.noticia-card:hover {
+  background: #e6f0ff;
+  transform: translateY(-3px);
+}
+
+.noticia-card img {
+  width: 100%;
+  height: 150px; /* altura menor da imagem */
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.noticia-card h3 {
+  font-size: 1rem; /* título menor */
+  margin-bottom: 6px;
+}
+
+.noticia-card p {
+  font-size: 0.85rem; /* texto menor */
+  color: #555;
+}
+
+.noticia-categoria {
+  display: block;
+  font-size: 0.8rem;
+  color: #2563eb;
+  margin-top: 4px;
+}
+
+.noticia-banner {
+  width: 100%;
+  height: 160px; /* banner menor */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.noticia-data {
+  font-size: 0.8rem;
+  color: #777;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Paginação */
+.paginacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.paginacao button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.paginacao button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.paginacao button:hover:not(:disabled) {
+  background: #1e40af;
+}
+
+.paginacao span {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Responsividade agrupada */
+
+/* >= 480px */
+@media screen and (min-width: 480px) {
+  .noticiasGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* >= 768px */
+@media screen and (min-width: 768px) {
+  .noticiasGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* >= 1366px */
+@media screen and (min-width: 1366px) {
+  .noticiasGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* >= 1440px */
+@media screen and (min-width: 1440px) {
+  .noticiasGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

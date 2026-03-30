@@ -1,0 +1,32 @@
+.layout{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.layoutBody{
+    flex: 1;
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    height: 100vh; /* ocupa toda a altura da viewport */
+    background-color: #1E1E2F;
+    color: #fff;
+    padding: 20px;
+}
+
+
+.layoutContent {
+    background:var(--background-color); /* ou outra cor clara */
+    flex: 1;
+    padding: 20px;
+    min-height: 800px;
+}
+
+@media (max-width: 768px) {
+  .layoutBody {
+    display: block; /* não força flex quando Sidebar é overlay */
+  }
+}
