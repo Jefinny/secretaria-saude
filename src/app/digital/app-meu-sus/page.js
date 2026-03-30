@@ -17,10 +17,6 @@ export default function Page() {
           src="/img/banner-paginas/susdigital.jpg"
           alt="Meu SUS Digital"
         />
-        <img
-          src="/img/banner-paginas/meu-sus-digital.jpg"
-          alt="Meu SUS Digital"
-        />
       </div>
 
       {/* Conteúdo */}

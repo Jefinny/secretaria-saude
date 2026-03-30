@@ -13,7 +13,7 @@ export default function Ouvidoria() {
       {/* Banner */}
       <div className="banner">
         <img
-          src="/img/bannerPaginas/ouvidoria.jpg"
+          src="/img/banner-paginas/ouvidoria.jpg"
           alt="Banner Ouvidoria"
         />
       </div>
