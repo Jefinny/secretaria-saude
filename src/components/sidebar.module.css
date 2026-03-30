@@ -74,17 +74,17 @@
   transition: opacity 0.3s ease;
 }
 
-/* Ícone padrão visível por padrão */
+/* Ícone padrão visível normalmente */
 .iconDefault {
   opacity: 1;
 }
 
-/* Ícone hover escondido por padrão */
+/* Ícone hover escondido normalmente */
 .iconHover {
   opacity: 0;
 }
 
-/* Quando passa o mouse no link, troca */
+/* Hover: troca os ícones */
 .menuLink:hover .iconDefault,
 .menuBtn:hover .iconDefault {
   opacity: 0;
@@ -95,16 +95,16 @@
   opacity: 1;
 }
 
-
-/* Quando passa o mouse no link, troca */
-.menuLink:hover .iconDefault {
+/* Ativo: mantém o hover mesmo sem passar o mouse */
+.menuBtn.active .iconDefault,
+.menuLink.active .iconDefault {
   opacity: 0;
 }
 
-.menuLink:hover .iconHover {
+.menuBtn.active .iconHover,
+.menuLink.active .iconHover {
   opacity: 1;
 }
-
 
 /* Bloco da seta à direita */
 .right {
@@ -159,6 +159,12 @@
     border-right-color: #fff;
     border-bottom-color: #fff;
 }
+/* Seta no botão ativo */
+.menuBtn.active .arrow {
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+}
+
 
 /* Responsivo */
 @media (max-width: 768px) {
