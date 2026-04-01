@@ -1,4 +1,5 @@
 .ContatosServicos {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -97,15 +98,82 @@
   background: #00aaff;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
-
-@media (min-width: 768px) {
+/* 📱 Celular pequeno */
+@media screen and (max-width: 480px) {
+  .menuContatos-btn {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+  }
   .cardsContatos {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr; /* 1 card por linha */
+  }
+  .cardContatos {
+    padding: 15px;
+    font-size: 14px;
   }
 }
 
-@media (min-width: 1200px) {
+/* 📱 Celular grande / Tablet pequeno */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .menuContatos-btn {
+    width: 140px;
+    height: 42px;
+    font-size: 15px;
+  }
   .cardsContatos {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr; /* ainda 1 card por linha */
+  }
+  .cardContatos {
+    padding: 20px;
+    font-size: 15px;
+  }
+}
+
+/* 💻 Tablet grande / Notebook pequeno */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .menuContatos-btn {
+    width: 150px;
+    height: 45px;
+    font-size: 15px;
+  }
+  .cardsContatos {
+    grid-template-columns: 1fr 1fr; /* 2 cards por linha */
+  }
+  .cardContatos {
+    padding: 22px;
+    font-size: 15px;
+  }
+}
+
+/* 💻 Notebook / Desktop médio */
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .menuContatos-btn {
+    width: 160px;
+    height: 45px;
+    font-size: 16px;
+  }
+  .cardsContatos {
+    grid-template-columns: 1fr 1fr; /* mantém 2 cards */
+  }
+  .cardContatos {
+    padding: 25px;
+    font-size: 16px;
+  }
+}
+
+/* 🖥️ Desktop grande */
+@media screen and (min-width: 1367px) {
+  .menuContatos-btn {
+    width: 170px;
+    height: 48px;
+    font-size: 16px;
+  }
+  .cardsContatos {
+    grid-template-columns: 1fr 1fr 1fr; /* 3 cards por linha */
+  }
+  .cardContatos {
+    padding: 28px;
+    font-size: 16px;
   }
 }

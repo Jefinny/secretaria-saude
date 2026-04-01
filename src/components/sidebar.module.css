@@ -175,7 +175,7 @@
     .sidebar {
         position: fixed;
         top: 0;
-        left: -250px; 
+        left: -271px; 
         height: 100%;
         transition: left 0.3s ease;
         z-index: 10;

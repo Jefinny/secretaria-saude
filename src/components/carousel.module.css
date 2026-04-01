@@ -1,0 +1,94 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* reduzi o limite para não ficar tão largo */
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.carouselWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3; /* menos alto que 16/9 */
+  max-height: 280px;   /* limite de altura menor */
+}
+
+.carouselImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* garante que a imagem preencha sem distorcer */
+  display: block;
+  border-radius: 12px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 5px; /* mais próximo da imagem */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 20;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: gray;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.activeDot {
+  background: #2563eb;
+  transform: scale(1.2);
+}
+
+/* Responsividade */
+
+/* 📱 Celular pequeno */
+@media screen and (max-width: 480px) {
+  .carouselWrapper {
+    aspect-ratio: 1 / 1;
+    max-height: 160px;
+  }
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* 📱 Celular grande / Tablet pequeno */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .carouselWrapper {
+    aspect-ratio: 4 / 3;
+    max-height: 200px;
+  }
+}
+
+/* 💻 Tablet grande / Notebook pequeno */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .carouselWrapper {
+    aspect-ratio: 16 / 9;
+    max-height: 240px;
+  }
+}
+
+/* 💻 Notebook / Desktop médio */
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .carouselWrapper {
+    aspect-ratio: 16 / 9;
+    max-height: 280px;
+  }
+}
+
+/* 🖥️ Desktop grande */
+@media screen and (min-width: 1367px) {
+  .carouselWrapper {
+    aspect-ratio: 16 / 9;
+    max-height: 320px;
+  }
+}

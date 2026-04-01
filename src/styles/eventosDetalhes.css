@@ -1,5 +1,6 @@
 .evento-detalhe {
-  max-width: 1000px;
+  width: 100%;        /* ocupa toda a largura disponível */
+  max-width: 1000px;  /* só limita em telas grandes */
   margin: 40px auto;
   padding: 0 20px;
 }
@@ -52,6 +53,7 @@
 .voltar:hover {
   background: #1e40af;
 }
+
 .evento-galeria {
   margin-top: 30px;
 }
@@ -68,6 +70,7 @@
 .evento-galeria-foto:hover {
   transform: scale(1.05);
 }
+
 /* Swiper pagination abaixo do carousel */
 .swiper-pagination {
   position: relative !important;
@@ -117,36 +120,155 @@
   background: rgba(255,255,255,0.2);
 }
 
-/* Setas */
-.modal-prev,
-.modal-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.6);
-  border: none;
-  font-size: 2rem;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  transition: background 0.2s;
+/* ===================== */
+/* Responsividade        */
+/* ===================== */
+
+/* 📱 Celular pequeno */
+@media screen and (max-width: 480px) {
+  .evento-detalhe h2 {
+    font-size: 1.4rem;
+  }
+  .evento-banner {
+    height: 140px;
+  }
+  .evento-galeria-foto {
+    height: 100px;
+  }
+  .modal-content img {
+    max-width: 90%;
+    max-height: 60vh;
+  }
 }
 
-.modal-prev {
-  left: 20px;
+/* 📱 Celular grande / Tablet pequeno */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .evento-detalhe h2 {
+    font-size: 1.6rem;
+  }
+  .evento-banner {
+    height: 160px;
+  }
+  .evento-galeria-foto {
+    height: 120px;
+  }
+  .modal-content img {
+    max-width: 80%;
+    max-height: 65vh;
+  }
 }
 
-.modal-next {
-  right: 20px;
+/* 💻 Tablet grande / Notebook pequeno */
+@media screen and (min-width: 769px) and (max-width: 1233px) {
+  .evento-detalhe h2 {
+    font-size: 1.8rem;
+  }
+  .evento-banner {
+    height: 180px;
+  }
+  .evento-detalhe{
+    width: 700px;
+  }
+ 
+  .evento-galeria-foto {
+    height: 140px;
+  }
+  .modal-content img {
+    max-width: 70%;
+    max-height: 65vh;
+  }
+}/* 📱 Celular pequeno */
+@media screen and (max-width: 480px) {
+  .evento-detalhe {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .evento-detalhe h2 {
+    font-size: 1.4rem;
+  }
+  .evento-banner {
+    height: 140px;
+  }
+  .evento-galeria-foto {
+    height: 100px;
+  }
+  .modal-content img {
+    max-width: 90%;
+    max-height: 60vh;
+  }
 }
 
-.modal-prev:hover,
-.modal-next:hover {
-  background: rgba(255,255,255,0.2);
+/* 📱 Celular grande / Tablet pequeno */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .evento-detalhe {
+    max-width: 750px;
+    padding: 0 15px;
+  }
+  .evento-detalhe h2 {
+    font-size: 1.6rem;
+  }
+  .evento-banner {
+    height: 160px;
+  }
+  .evento-galeria-foto {
+    height: 120px;
+  }
+  .modal-content img {
+    max-width: 85%;
+    max-height: 65vh;
+  }
 }
 
+/* 💻 Tablet grande / Notebook pequeno */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .evento-detalhe {
+    
+    max-width: 500px;
+    padding: 0 20px;
+  }
+  .evento-detalhe h2 {
+    font-size: 1.8rem;
+  }
+  .evento-banner {
+    height: 180px;
+  }
+  .evento-galeria-foto {
+    height: 140px;
+  }
+  .modal-content img {
+    max-width: 75%;
+    max-height: 65vh;
+  }
+}
 
+/* 💻 Notebook / Desktop médio */
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .evento-detalhe {
+    padding: 0 20px;
+  }
+  .evento-detalhe h2 {
+    font-size: 2rem;
+  }
+  .evento-banner {
+    height: 200px;
+  }
+  .evento-galeria-foto {
+    height: 160px;
+  }
+}
+
+/* 🖥️ Desktop grande */
+@media screen and (min-width: 1367px) {
+  .evento-detalhe {
+    padding: 0 20px;
+  }
+  .evento-detalhe h2 {
+    font-size: 2.2rem;
+  }
+  .evento-banner {
+    height: 240px;
+  }
+  .evento-galeria-foto {
+    height: 180px;
+  }
+}

@@ -1,11 +1,3 @@
-.container {
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Seções */
 .section {
   margin-top: 40px;
   max-width: 1200px;
@@ -25,10 +17,10 @@
   margin-top: 20px;
 }
 
-/* Botões */
+/* Botão azul */
 .buttonBlue {
-  background: #2563eb;
-  color: #fff;
+  background: var(--text-color-secondary);
+  color: var(--text-colo-tertiary);
   padding: 10px 20px;
   border-radius: 6px;
   text-decoration: none;
@@ -36,27 +28,7 @@
 }
 
 .buttonBlue:hover {
-  background: #1e40af;
-}
-
-.buttonPurple {
-  background: #9333ea;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background 0.2s;
-}
-
-.buttonPurple:hover {
-  background: #6d28d9;
-}
-
-/* Grid de notícias */
-.noticiasGrid {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 1fr; /* padrão celular */
+  background: var(--primary-color);
 }
 
 /* Grid de eventos */
@@ -69,81 +41,80 @@
 }
 
 .eventCard {
-  background: #fff;
+  display: block;
+  background: var(--text-colo-tertiary);
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
   text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
   color: inherit;
+  padding: 12px; /* padding interno */
 }
 
-.eventCard img {
+.eventCard:hover {
+  transform: translateY(-4px);
+}
+
+.eventoBanner {
   width: 100%;
-  height: 180px;
+  height: 150px;
   object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 8px;
 }
 
-.eventCard h4 {
-  margin: 8px;
-  font-size: 0.95rem;
-  font-weight: bold;
+.eventoData {
+  font-size: 0.8rem;
+  color: var(--text-color-primary);
+  margin-bottom: 6px;
+  display: block;
 }
 
-.eventCard p {
+.eventoTitulo {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: var(--primary-color); /* azul */
+}
+
+.eventoDesc {
   font-size: 0.85rem;
-  margin: 0 8px 12px;
+  color: var(--text-color-primary);
 }
 
 /* Responsividade */
 
 /* 📱 Celular pequeno */
 @media screen and (max-width: 480px) {
-  .noticiasGrid {
-    grid-template-columns: 1fr;
-  }
   .eventosGrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 1 card */
   }
 }
 
 /* 📱 Celular grande / Tablet pequeno */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .noticiasGrid {
-    grid-template-columns: 1fr;
-  }
   .eventosGrid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr; /* 1 card */
   }
 }
 
 /* 💻 Tablet grande / Notebook pequeno */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .noticiasGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .eventosGrid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 cards */
   }
 }
 
 /* 💻 Notebook / Desktop médio */
 @media screen and (min-width: 1025px) and (max-width: 1366px) {
-  .noticiasGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .eventosGrid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 cards */
   }
 }
 
 /* 🖥️ Desktop grande */
 @media screen and (min-width: 1367px) {
-  .noticiasGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
   .eventosGrid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 cards */
   }
 }

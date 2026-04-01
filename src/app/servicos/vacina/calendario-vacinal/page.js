@@ -6,18 +6,24 @@ import calendario from "../../../../data/calendario.json";
 
 export default function Page() {
   const [selecionado, setSelecionado] = useState("Gestante");
-  const [expandido, setExpandido] = useState(null);
+  const [expandidos, setExpandidos] = useState([]); // vários abertos
 
   const grupos = calendario.grupos;
   const cards = calendario.cards;
 
+  const toggleCard = (id) => {
+    if (expandidos.includes(id)) {
+      // se já está aberto, fecha
+      setExpandidos(expandidos.filter((c) => c !== id));
+    } else {
+      // se não está aberto, adiciona
+      setExpandidos([...expandidos, id]);
+    }
+  };
+
   return (
     <div className="CalendarioVacinal">
-      <p>
-        A vacinação é a melhor maneira de proteger contra doenças imunopreveníveis.
-        O Calendário Nacional de Vacinação ajuda a descobrir quais vacinas cada pessoa precisa
-        e quando aplicá-las.
-      </p>
+      <p>Calendário Nacional de Vacinação...</p>
 
       {/* Linha do tempo */}
       <div className="linha-tempo">
@@ -26,7 +32,7 @@ export default function Page() {
           <div
             key={grupo.nome}
             className="grupo"
-            onClick={() => { setSelecionado(grupo.nome); setExpandido(null); }}
+            onClick={() => { setSelecionado(grupo.nome); setExpandidos([]); }}
           >
             <div className={`circulo ${selecionado === grupo.nome ? "ativo" : ""}`}>
               <img src={grupo.imagem} alt={grupo.nome} />
@@ -36,28 +42,27 @@ export default function Page() {
         ))}
       </div>
 
-      {/* Cards em 2 colunas */}
+      {/* Cards */}
       <div className="cards">
         {cards[selecionado].map((card) => (
           <div
-  key={card.id}
-  className={`CardCalendario ${expandido === card.id ? "expandido" : ""}`}
->
-  <div
-    className="card-titulo"
-    onClick={() => setExpandido(expandido === card.id ? null : card.id)}
-  >
-    <span>{card.idade}</span>
-    <span className="seta">{expandido === card.id ? "▼" : "▶"}</span>
-  </div>
+            key={card.id}
+            className={`CardCalendario ${expandidos.includes(card.id) ? "expandido" : ""}`}
+          >
+            <div
+              className="card-titulo"
+              onClick={() => toggleCard(card.id)}
+            >
+              <span>{card.idade}</span>
+              <span className="seta">{expandidos.includes(card.id) ? "▼" : "▶"}</span>
+            </div>
 
-  {/* Só renderiza o conteúdo se for o expandido */}
-  {expandido === card.id && (
-    <div className="card-conteudo">
-      {card.detalhes}
-    </div>
-  )}
-</div>
+            {expandidos.includes(card.id) && (
+              <div className="card-conteudo">
+                {card.detalhes}
+              </div>
+            )}
+          </div>
         ))}
       </div>
     </div>

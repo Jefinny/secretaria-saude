@@ -7,12 +7,13 @@
 
 .banner img {
   width: 100%;
-  height: 250px;
+  height: auto;       /* deixa a altura proporcional */
+  max-height: 250px;  /* limite em telas grandes */
   object-fit: cover;
   border-radius: 8px;
 }
 
-.conteudo h2 {
+.conteudo h {
   color: var(--primary-color);
   margin-bottom: 20px;
 }
@@ -69,4 +70,38 @@
 
 .btn-adocao:hover {
   background-color: var(--tertiary-color);
+}
+/* 📱 Celular pequeno */
+@media screen and (max-width: 480px) {
+  .banner img {
+    max-height: 140px;
+  }
+}
+
+/* 📱 Celular grande / Tablet pequeno */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .banner img {
+    max-height: 180px;
+  }
+}
+
+/* 💻 Tablet grande / Notebook pequeno */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .banner img {
+    max-height: 200px;
+  }
+}
+
+/* 💻 Notebook / Desktop médio */
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .banner img {
+    max-height: 250px;
+  }
+}
+
+/* 🖥️ Desktop grande */
+@media screen and (min-width: 1367px) {
+  .banner img {
+    max-height: 300px;
+  }
 }
